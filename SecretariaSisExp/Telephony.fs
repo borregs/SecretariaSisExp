@@ -3,11 +3,11 @@ module Telephony
 open System
 open Microsoft.AspNetCore.Http
 open Twilio.TwiML
-open Twilio.Rest.Api.V2.Core
+open Twilio.Rest.Api
 open Twilio.Types
 open AiBrain
 
-let twilioPhone = "YOUR_TWILIO_PHONE_NUMBER"
+let twilioPhone = "+17372508034"
 
 let handleVoiceRequest (req: HttpRequest) (client: HttpClient) = task {
     let! form = req.ReadFormAsync()
