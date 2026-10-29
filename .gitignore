@@ -1,9 +1,12 @@
+#.net
+CopilotIndices/
+#vs
 
 # Environments
 .env
 
 
-Env.fs
+/.vs
 /.vs/SecretariaSisExp/CopilotIndices/18.10.1201.59691/SemanticSymbols.db
 /.vs/SecretariaSisExp.slnx/DesignTimeBuild/.dtbcache.v2
 /.vs/SecretariaSisExp.slnx/FileContentIndex
