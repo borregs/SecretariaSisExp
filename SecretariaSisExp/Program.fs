@@ -1,4 +1,5 @@
 ﻿open System
+open Microsoft.AspNetCore.Http
 open Microsoft.AspNetCore.Builder
 open Microsoft.Extensions.DependencyInjection
 open Twilio
@@ -21,9 +22,18 @@ let builder = WebApplication.CreateBuilder()
 builder.Services.AddHttpClient() |> ignore
 let app = builder.Build()
 
-app.MapPost("/api/voice", fun (req: Microsoft.AspNetCore.Http.HttpRequest, httpFactory: IHttpClientFactory) -> 
-    let client = httpFactory.CreateClient()
-    Telephony.handleVoiceRequest req client
+app.MapPost(
+    "/api/voice",
+    System.Func<
+        HttpContext,
+        System.Threading.Tasks.Task<IResult>
+    >(fun context ->
+        let httpFactory =
+            context.RequestServices.GetRequiredService<IHttpClientFactory>()
+
+        let client = httpFactory.CreateClient()
+
+        Telephony.handleVoiceRequest context.Request client)
 ) |> ignore
 
 app.Run()
