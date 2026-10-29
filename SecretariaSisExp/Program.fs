@@ -24,11 +24,14 @@ let builder = WebApplication.CreateBuilder()
 builder.Services.AddHttpClient() |> ignore
 
 // Force maximum verbosity in the console
-builder.Logging.ClearProviders() |> ignore
+//builder.Logging.ClearProviders() |> ignore
 builder.Logging.AddConsole() |> ignore
-builder.Logging.SetMinimumLevel(LogLevel.Debug) |> ignore
+//builder.Logging.SetMinimumLevel(LogLevel.Debug) |> ignore
 
 let app = builder.Build()
+
+app.UseDefaultFiles() |> ignore
+app.UseStaticFiles() |> ignore
 
 app.MapPost(
     "/api/voice",
