@@ -1,12 +1,12 @@
 namespace SecretariaSisExp.Core 
-
+open Twilio.Rest.Api.V2010.Account
 open System
 open Microsoft.AspNetCore.Http
 open Twilio.TwiML
-open Twilio.Rest.Api
+
 open Twilio.Types
 open System.Net.Http
-open Twilio.Rest.IpMessaging.V2.Service.Channel
+//open Twilio.Rest.IpMessaging.V2.Service.Channel
 
 module Telephony =
     let handleVoiceRequest (req: HttpRequest) (client: HttpClient) = task {
@@ -24,11 +24,11 @@ module Telephony =
 
         if aiReply.ToLowerInvariant().Contains("text") && not (String.IsNullOrWhiteSpace(callerPhone)) then
             try
-                MessageResource.Create(
-                    to_ = PhoneNumber(callerPhone),
-                    from = PhoneNumber(twilioPhone),
-                    body = "Hello! Here is the follow-up scheduling link."
-                ) |> ignore
+                let messageOptions = CreateMessageOptions(PhoneNumber(callerPhone))
+                messageOptions.From <- PhoneNumber(twilioPhone)
+                messageOptions.Body <- "Hello! Here is the follow-up scheduling link."
+
+                MessageResource.Create(messageOptions) |> ignore
             with _ -> ()
 
         let response = VoiceResponse()
