@@ -33,7 +33,7 @@ module AiBrain =
             |> List.map (fun m -> {| role = m.role; content = m.content |}) 
             |> List.toArray
 
-        // Groq's free Llama 3 model (If using DeepSeek, change model to "deepseek-chat")
+        // Groq's 
         let payload = {| 
             model = "openai/gpt-oss-20b" 
             messages = messagesArray 
