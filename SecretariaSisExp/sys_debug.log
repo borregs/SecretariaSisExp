@@ -1,0 +1,33 @@
+[20:57:39.301] [Payload] SpeechResult: bueno?
+[20:57:39.302] [Payload] From: +526863475070
+[20:59:47.689] [SYS DEBUG] [Payload] SpeechResult: bueno?
+[20:59:47.689] [SYS DEBUG] [Payload] From: +526863475070
+[21:22:16.382] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:22:16.382] [SYS DEBUG] [Payload] From: +526863475070
+[21:22:41.214] [SYS DEBUG] [LLM Error] Object reference not set to an instance of an object.
+[21:23:56.947] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:23:56.948] [SYS DEBUG] [Payload] From: +526863475070
+[21:27:58.910] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:27:58.911] [SYS DEBUG] [Payload] From: +526863475070
+[21:27:59.312] [SYS DEBUG] [LLM API Error] Status: Unauthorized | Body: {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[21:48:11.118] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:48:11.118] [SYS DEBUG] [Payload] From: +526863475070
+[21:48:11.401] [SYS DEBUG] [LLM API Error] Status: Unauthorized | Body: {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[21:50:51.515] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:50:51.516] [SYS DEBUG] [Payload] From: +526863475070
+[21:50:51.887] [SYS DEBUG] [LLM API Error] Status: BadRequest | Body: {"error":{"message":"The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[21:54:53.130] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:54:53.130] [SYS DEBUG] [Payload] From: +526863475070
+[21:54:53.546] [SYS DEBUG] [LLM API Error] Status: BadRequest | Body: {"error":{"message":"The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[21:56:04.172] [SYS DEBUG] [Payload] SpeechResult: Can you tell me about the property?
+[21:56:04.173] [SYS DEBUG] [Payload] From: +526863475070
+[21:56:57.811] [SYS DEBUG] [Payload] SpeechResult: its OM734823MLS in interlachen
+[21:56:57.811] [SYS DEBUG] [Payload] From: +526863475070
+[21:57:17.938] [SYS DEBUG] [Payload] SpeechResult: U like it? trynna poach it from me?
+[21:57:17.939] [SYS DEBUG] [Payload] From: +526863475070
+[21:59:03.555] [SYS DEBUG] [Payload] SpeechResult: Hanlas espa?
+[21:59:03.555] [SYS DEBUG] [Payload] From: +526863475070

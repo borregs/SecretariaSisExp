@@ -23,10 +23,11 @@ if not (String.IsNullOrWhiteSpace(twilioSid)) then
 let builder = WebApplication.CreateBuilder()
 builder.Services.AddHttpClient() |> ignore
 
-// Force maximum verbosity in the console
+// verbosity  console option flags
 //builder.Logging.ClearProviders() |> ignore
-builder.Logging.AddConsole() |> ignore
+//builder.Logging.AddConsole() |> ignore
 //builder.Logging.SetMinimumLevel(LogLevel.Debug) |> ignore
+builder.Logging.SetMinimumLevel(LogLevel.Warning) |> ignore
 
 let app = builder.Build()
 
@@ -53,11 +54,12 @@ app.MapGet(
     System.Func<HttpContext, string>(fun context ->
         let loggerFactory = context.RequestServices.GetRequiredService<ILoggerFactory>()
         let logger = loggerFactory.CreateLogger("Routing")
+        
+        ConsoleUI.debugLog "[WARNING] Received a GET request. Twilio must be set to POST."
         logger.LogWarning("[WARNING] Received a GET request. Twilio must be set to POST.")
+        
         "This endpoint requires a POST request."
     )
 ) |> ignore
-
-app.MapGet("/", System.Func<string>(fun () -> "Diagnostic server running.")) |> ignore
 
 app.Run()
