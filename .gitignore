@@ -15,3 +15,6 @@ CopilotIndices/
 /SecretariaSisExp/obj
 /SecretariaSisExp/bin/Debug/net9.0
 /SecretariaSisExp/Properties/launchSettings.json
+/SecretariaSisExp/chat_transcript.log
+/SecretariaSisExp/sys_debug.log
+/SecretariaSisExp/sys_info.log
