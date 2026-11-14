@@ -16,8 +16,8 @@ Due to upstream Twilio Trial restrictions, inbound calls are screened. Only pre-
 
 
 ### Live Call Log Demonstration
+<img width="4588" height="5135" alt="diagram" src="https://github.com/user-attachments/assets/25b9737a-8435-462b-a9c8-2fc755caff90" />
 
-![Terminal Output](docs/images/call-success.png)
 <details>
 <summary><b>Click to expand full server execution trace</b></summary>
 
