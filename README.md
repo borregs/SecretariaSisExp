@@ -1,12 +1,10 @@
-# <center>Secretaria Experta</center>[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/borregs/secretariasisexp?utm_source=readme&utm_medium=badge)
-
+# <center>Secretaria Experta</center>
 SecretariaSisExp is an agentic AI-powered phone assistant built with F# and ASP.NET Core. It listens for Twilio voice requests, sends the caller’s speech to an AI model, and responds with a spoken answer. If the AI response indicates a follow-up or scheduling need, the app can also send a text message to the caller.
 
 ## 📞 Live beta Telephony Line
 
 > **Phone Number:**  
 > # **`+1 (737) 250-8034`**
-
 [![Subscribe to Beta](https://img.shields.io/badge/Subscribe%20to%20Beta-ITM%20Whitelisted%20Only-f59e0b?style=for-the-badge&logo=twilio&logoColor=white)](https://voice.borregs.qzz.io)
 
 ### Access Policy
@@ -15,9 +13,10 @@ Due to upstream Twilio Trial restrictions, inbound calls are screened. Only pre-
 👉 **[Click here to request beta caller access](https://voice.borregs.qzz.io)**
 
 
-### Live Call Log Demonstration
-<img width="4588" height="5135" alt="diagram" src="https://github.com/user-attachments/assets/25b9737a-8435-462b-a9c8-2fc755caff90" />
 
+[![.NET Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/borregs/secretariasisexp?utm_source=readme&utm_medium=badge)
+<img width="4588" height="5135" alt="diagram" src="https://github.com/user-attachments/assets/25b9737a-8435-462b-a9c8-2fc755caff90" />
+### Live Call Log Demonstration
 <details>
 <summary><b>Click to expand full server execution trace</b></summary>
 
