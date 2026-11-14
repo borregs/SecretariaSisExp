@@ -13,9 +13,6 @@ Due to upstream Twilio Trial restrictions, inbound calls are screened. Only pre-
 👉 **[Click here to request beta caller access](https://voice.borregs.qzz.io)**
 
 
-
-[![.NET Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/borregs/secretariasisexp?utm_source=readme&utm_medium=badge)
-<img width="4588" height="5135" alt="diagram" src="https://github.com/user-attachments/assets/25b9737a-8435-462b-a9c8-2fc755caff90" />
 ### Live Call Log Demonstration
 <details>
 <summary><b>Click to expand full server execution trace</b></summary>
@@ -44,8 +41,9 @@ info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
       Request finished HTTP/1.1 POST [http://voice.yourdomain.com/api/voice](http://voice.yourdomain.com/api/voice) - 200 application/xml
 ```
 </details>
-
-
+# .NET 10 compliant Microservice
+[![.NET Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/borregs/secretariasisexp?utm_source=readme&utm_medium=badge)
+<img width="4588" height="5135" alt="diagram" src="https://github.com/user-attachments/assets/25b9737a-8435-462b-a9c8-2fc755caff90" />
 ## Features
 
 - Twilio voice webhook endpoint at `/api/voice`
