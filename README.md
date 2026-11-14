@@ -4,7 +4,7 @@ SecretariaSisExp is an agentic AI-powered phone assistant built with F# and ASP.
 ## 📞 Live beta Telephony Line
 
 > **Phone Number:**  
-> # **`+1 (737) 250-8034`**
+> <s> # **`+1 (737) 250-8034`** </s>
 [![Subscribe to Beta](https://img.shields.io/badge/Subscribe%20to%20Beta-ITM%20Whitelisted%20Only-f59e0b?style=for-the-badge&logo=twilio&logoColor=white)](https://voice.borregs.qzz.io)
 
 ### Access Policy
