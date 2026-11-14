@@ -1,4 +1,4 @@
-# <center>Secretaria Experta</center>
+# <center>Secretaria Experta</center>[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/borregs/secretariasisexp?utm_source=readme&utm_medium=badge)
 
 SecretariaSisExp is an agentic AI-powered phone assistant built with F# and ASP.NET Core. It listens for Twilio voice requests, sends the caller’s speech to an AI model, and responds with a spoken answer. If the AI response indicates a follow-up or scheduling need, the app can also send a text message to the caller.
 
